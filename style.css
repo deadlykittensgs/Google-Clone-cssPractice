@@ -1,0 +1,217 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+background-color: rgb(37, 36, 36);
+color: white;
+
+min-height: 100vh;
+display: flex;
+flex-direction: column;
+gap: 14px;
+font-family: sans-serif, 'Times New Roman', Times, serif;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 14px;
+}
+
+nav,
+section {
+    display: flex;
+    align-items: center;
+    gap:14px;
+}
+
+.grayLink{
+
+    color:lightgray;
+}
+
+
+.whiteLink {
+
+    color:whitesmoke;
+
+}
+
+
+
+/* chose the header then the 
+section in the header than 
+the img */
+
+header section img {
+max-width: 50px;
+border-radius:50%;
+border: 2px solid cyan;
+
+}
+
+
+a {
+    text-decoration: unset;
+    font-size: 0.8em;
+   
+}
+a:hover{
+    text-decoration: underline;
+}
+
+main {
+flex: 1;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+gap: 24px;
+padding: 0 14px;
+
+}
+
+.headerText {
+font-size: 5em;
+font-family: 'Times New Roman';
+color: white;
+}
+
+
+.iconButtonContainer {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+ 
+}
+
+.iconButton {
+
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+
+
+
+
+.searchBar {
+    display: flex;
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+    gap: 14px;
+    border: 1px solid gray;
+    padding: 14px;
+    border-radius: 50px;
+
+}
+
+.searchBar:hover {
+
+    border-color: transparent;
+    background-color: lightgray;
+
+}
+
+input {
+    background: transparent;
+    outline: none;
+    border: unset;
+    color: white;
+    flex:1;
+    
+
+}
+
+.searchButtonContainer{
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+
+.searchButtonContainer button {
+
+    padding: 10px 14px;
+    border-radius: 4px;
+    background-color:#434343;
+    border: 1px solid transparent;
+    color: white;
+    cursor: pointer;
+
+
+
+}
+
+.searchButtonContainer button:hover {
+
+    border: 1px solid lightgray;
+
+}
+
+.languageSelection {
+
+font-size: 0.9em;
+}
+
+span {
+color: rgb(67, 67, 255);
+
+}
+
+
+footer{
+display: flex; 
+flex-direction: column;
+}
+
+footer>section {
+    padding: 14px;
+}
+
+
+  /* > means direct descendants only  */
+footer>section:last-child {
+padding: 14px;
+border-top: 1px solid darkgray ;
+display: flex;
+flex-direction: column;
+justify-content: space-around;
+align-items: center;
+
+
+}
+
+.footerLink {
+
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.footerLink a {
+
+    color: white;
+    cursor: pointer;
+}
+
+
+@media(min-width: 540px){
+
+    footer>section:last-child {
+        display: flex;
+        flex-direction: row;
+    
+    }
+    
+    }
+    
